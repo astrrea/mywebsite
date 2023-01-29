@@ -88,7 +88,6 @@ ul, li {
 /* navigation menu */
 .menu {
 	overflow: hidden;
-	background-color: none;
 	position: fixed;
 	bottom: 0;
 	right: 0;
