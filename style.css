@@ -1,0 +1,115 @@
+body {
+	background-color: #1F2833;
+		margin: 50px;
+}
+* {
+	font-family: "Lucida console", Monospace;
+	line-height: 2;
+	text-align: justify;
+}
+h1 {
+	color: #c5c6c7;
+	font-size: 35px;
+
+}
+h2 {
+	color: cyan;
+	font-size: 33px;
+	
+}
+h3, h4, h5 {
+	color: #45A29E;
+	font-size: 30px;
+}
+
+
+p {
+	color: white;
+	font-size: 18px;
+	margin-right: 100px;
+}
+a {
+	text-decoration: none;
+	font-family:  "Lucida console", Monospace;
+	color: white;
+}
+
+/* classes */
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+/* button effect */
+.button {
+    padding: 15px;
+    border: 3px solid cyan;
+    background-color: #0B0C10;
+    color: white;
+	font-size: 20px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* typewrite effect */
+.typewriter h2 {
+	overflow: hidden;
+	border-right: 0.15em solid black;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation:
+		typings 3.5s steps(40, end),
+		blink-caret 0.75s step-end;
+}
+@keyframes typings {
+	from { width:0 }
+	to {width: 100% }
+}
+/* cursor */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: black; }
+}
+
+/* navigation menu */
+.menu {
+	overflow: hidden;
+	background-color: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	
+}
+
+.menu a{
+	float: right;
+	display: block;
+	color: #45A29E;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0px 10px;
+}
+.menu a:hover{
+	color: white;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: "🤍";
+	padding-left: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+    /*Your styles on small screen - example only*/
+     display:block;
+     position:relative;
+    }
+}
