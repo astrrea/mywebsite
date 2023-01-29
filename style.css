@@ -1,6 +1,6 @@
 body {
 	background-color: #1F2833;
-		margin: 50px;
+	margin: 50px;
 }
 * {
 	font-family: "Lucida console", Monospace;
@@ -9,29 +9,36 @@ body {
 }
 h1 {
 	color: #c5c6c7;
-	font-size: 35px;
+	font-size: 50px;
 
 }
 h2 {
 	color: cyan;
-	font-size: 33px;
+	font-size: 45px;
 	
 }
 h3, h4, h5 {
 	color: #45A29E;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 
 p {
 	color: white;
-	font-size: 18px;
+	font-size: 25px;
 	margin-right: 100px;
 }
 a {
 	text-decoration: none;
 	font-family:  "Lucida console", Monospace;
 	color: white;
+}
+ul, li {
+	list-style-position: inside;
+	list-style-type: "🤍";
+	padding-left: 100px;
+	color: white;
+	font-size: 25px;
 }
 
 /* classes */
@@ -93,20 +100,14 @@ a {
 	display: block;
 	color: #45A29E;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 20px;
 	padding: 0px 10px;
 }
 .menu a:hover{
 	color: white;
 }
 
-ul {
-	list-style-position: inside;
-	list-style-type: "🤍";
-	padding-left: 100px;
-}
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .menu {
     /*Your styles on small screen - example only*/
      display:block;
