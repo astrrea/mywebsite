@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="DensleyKateStyleSheet.css"/>
+  <meta charset="UTF-8">
+  <meta name="description" content="Star Constellations">
+  <meta name="keywords" content="Star Constellations, Star, Star Patterns, Star clusters ">
+  <meta name="author" content="Kate Densley">
+<title>Star Constellations</title>
+<script>
+	function allowDrop(ev){
+		ev.preventDefault();
+		}
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+		}
+	function drop(ev){
+		var data=ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+		ev.preventDefault();
+		}
+</script>
+</head>
+<body>
+<header>
+<img id="animation" src="header1.jpg" alt="Constellations logo"  width="100" height="80"/>
+</header>	
+	<main>
+	<h1> Star Constellations </h1>
+	    <nav>
+          <div id="menu">
+            <ul>
+                <li class="active"><a href="DensleyKate1.html">Home</a></li>
+                <li><a href="myth.html">Myths</a></li>
+				<li><a href="composition.html">Composition</a></li>
+				<li><a href="form.html">Register</a></li>
+				<li><a href="forum.html">Forum</a></li>
+            </ul>
+          </div>
+        </nav>
+	<h2> What are Constellations? </h2>
+	<p> Constellations is a group of stars that forms an imaginary pattern in the night sky. 
+	These stars form particular shapes if you draw imaginary lines like a dot-to-dot puzzle(Nasa, 2021).
+	</p>
+	<img id="drag1" src="const.jpg" alt="const" draggable="true" ondragstart="drag(event)" width ="500" height ="300">
+	<p> Drag picture in the rectangle </p>
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+	</main>
+	
+	<section>
+	<h2>The most common constellations in the sky</h2>
+	<p>
+		1. Ursa Major - also known as the great bear, it is ladle shaped and found in the northern night sky.
+		<img src="ursamajor.jpg" alt="ursa major" width ="500" height ="200">
+		2. Orion - also known as the great hunter, it is visible from all parts of the world as it is located in the celestial equator.
+		<img src="orion.jpg" alt="orion" width ="500" height ="200">
+		3. Cassiopeia - named after mother of Andromeda, Queen Cassiopeia. <br>
+		It is composed of five very bright stars that forms the shape of a W. It is located in the northen hemisphere.
+		<img src="cassiopeia.jpg" alt="cassiopeia" width="500" height="200">
+		References: <a href="https://starwalk.space/en/infographics/7-constellations-everyone-can-find" > Starwalk.space</a> <br>
+					<a href="https://sciencing.com/big-dipper-kids-8161309.html" > sciencing.com </a> <br>
+		
+	</p>
+	</section>	
+	
+	<article>
+	<h3> How are constellations beneficial? </h3>
+	<p> Star constellations are beneficial because astronauts used them as landmarks in the sky. 
+	Stars are in a fixed location and approximately in the same spot for plenty of years. <br>
+	In the ancient times, they used constellations to create a calendar for harvests.
+	</p>
+	</article>
+	
+	<aside>
+		<h4>Learn more about star constellations</h4>
+		<a href="https://spaceplace.nasa.gov/constellations/en/" > NASA constellations</a> <br>
+		<a href="https://astronomy.com/observing/astro-for-kids/2008/03/learn-the-constellations"> Astrology.com </a> <br>
+	</aside>
+	<footer>
+	<p> For homework purposes only. I do not own any of the pictures used in this website. </p>
+	</footer>
+</body>
+</html>

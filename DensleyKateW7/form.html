@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="DensleyKateStyleSheet.css"/>
+  <meta charset="UTF-8">
+  <meta name="description" content="Star Constellations">
+  <meta name="keywords" content="Star Constellations, Star, Star Patterns, Star clusters ">
+  <meta name="author" content="Kate Densley">
+<title>Star Constellations</title>
+</head>
+<body>
+<header>
+<img id="animation" src="header1.jpg" alt="Constellations logo"  width="100" height="80"/>
+</header>
+<main>
+	<h1> Register to forum </h1>
+        <nav>
+          <div id="menu">
+            <ul>
+                <li class="active"><a href="DensleyKate1.html">Home</a></li>
+                <li><a href="myth.html">Myths</a></li>
+				<li><a href="composition.html">Composition</a></li>
+				<li><a href="form.html">Register</a></li>
+				<li><a href="forum.html">Forum</a></li>
+				<li><a href="gallery.html"> Gallery </a> </li>
+            </ul>
+          </div>
+        </nav>
+  
+	<form autocomplete="on" method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+	<p> Register to the Forum </p>
+	<fieldset name="name">
+		<legend> Please input your name: </legend>
+		<label for="fname"> first name: </label><br>
+		<input autofocus type="text" id="fname" name="fname" required><br>
+		<label for="lname"> last name: </label><br>
+		<input type="text" id="lname" name="lname" required><br>
+	</fieldset>
+
+	<fieldset>
+	<legend> Create account login: </legend>
+		<label for="email"> email:</label>
+		<input type="email" id="email" name="email" placeholder="user@domain.com" pattern="^.+@.+$" required ><br>
+		<label for ="pass"> Password: </label>
+		<input type="password" id="pass" name="password" required>
+	</fieldset>
+	
+	<fieldset>
+	<legend> Date of Birth: </legend>
+		<label for="dob"> </label>
+		<input type="date" id="dob" name="dob" required ><br>
+	</fieldset>
+
+	<fieldset>	
+	<legend> Choose your gender: </legend>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">female</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">male</label><br>
+	</fieldset>
+	
+	<fieldset>
+	<legend> Race </legend>
+		<input type="checkbox" id="americanindian" name="americanindian" value="americanindian">
+		<label for="americanindian"> American Indian or Alaskan Native </label><br>
+		<input type="checkbox" id="asian" name="asian" value="asian">
+		<label for="asian"> Asian </label><br>
+		<input type="checkbox" id="pacificislander" name="pacificislander" value="pacificislander">
+		<label for="pacificislander"> Native Hawaiian or Pacific Islander </label><br>
+		<input type="checkbox" id="black" name="black" value="black">
+		<label for="black"> Black or African American </label><br>
+		<input type="checkbox" id="white" name="white" value="white">
+		<label for="white"> White or Caucasian </label><br>
+		<input type="checkbox" id="na" name="na" value="na">
+		<label for="na"> I do not wish to provide this information </label><br>
+	</fieldset>
+	
+	<fieldset>	
+	<legend> Ethnicity </legend>
+		<select name="ethnicity">
+		   <option value="not specified">Not Specified</option>
+		   <option value="Hispanic or Latino">Hispanic or Latino</option>
+		   <option value="nothl">Not Hispanic or Latino</option>
+		   <option value="na">I do not wish to provide this information</option>
+		</select>
+	</fieldset>
+	
+	<fieldset>
+	<legend> Why do you want to join the forum? </legend>
+		<textarea name ="reason" rows="20" cols="60" required>
+	Please write your reason here
+		</textarea>
+	</fieldset>
+	
+	<fieldset>
+	<legend> Account Configuration</legend>
+		<label for="pfp">Upload your picture:</label> 
+		<input type="file" id="pfp" name="pfp" required> <br>
+		<label for="actcolor"> Choose your name font color: </label>
+		<input type="color" id="actcolor" name="actcolor">
+	</fieldset>
+	
+	<fieldset>
+	<legend> Social Media Account </legend>
+		<label for="sma"> Paste the url of your social media in the box: </label><br>
+		<input type="email" id="sma" name="sma" placeholder="http://www.company.com" pattern="https?://.+" required>
+	</fieldset>
+	
+	<fieldset>
+		<legend> Rate the registration process: </legend>
+		<input type="range" id="eval" name="eval" min="1" max="5" value="5"> 	
+	</fieldset>
+	
+	<fieldset>
+	<legend> End of Form:</legend>
+		<button type="submit"  formmethod="post"
+		formaction="http://ss1.ciwcertified.com/cgi-bin/process.pl" formtarget="_blank"> Submit Form </button>
+		<button type="reset"> Reset Form </button>
+	</fieldset>
+	
+
+	</form>
+</main>
+</body>
+</html>

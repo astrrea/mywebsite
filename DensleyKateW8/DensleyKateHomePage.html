@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="DensleyKateStyleSheet.css"/>
+  <meta charset="UTF-8">
+  <meta name="description" content="A website for MMORPG Lagoon Online">
+  <meta name="keywords" content="MMORPG, Lagoon Online, Online Game">
+  <meta name="author" content="Kate Densley">
+<title>Lagoon Online</title>
+</head>
+<body>
+	<h1 onmouseover="style.color='lightcoral'" onmouseout="style.color='steelblue'">
+			Welcome to Lagoon Online! </h1>
+	<nav>
+          <div id="menu">
+            <ul>
+                <li class="active"><a href="DensleyKateHomePage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+				<li><a href="table.html">Table</a></li>
+				<li><a href="form.html">Form</a></li>
+            </ul>
+			</div>
+       </nav>  
+	<img src="lagoon.jpeg" alt="lagoon" width ="500" height ="300">
+		
+	<audio controls autoplay muted>
+	<source src="audio.mp3" type="audio/ogg">
+	Your browser does not support the audio element.
+	</audio>
+	
+	<button type="button"
+	onclick="document.getElementById('demo').innerHTML = Date()">
+	Server Date and Time </button>
+	 <!-- to show the time and date --> 
+	<p id="demo"></p>
+	
+	<p> You have been chosen to participate in the <span class="boldtext">Lagoon</span><br>
+	    You must <span class="italictext">train hard</span> to prove that you are one of the best. <br> 
+		Only when you receive the title
+		<a href="https://en.wikipedia.org/wiki/Lagoon"><span class="boldtext italictext">"Hero"</span></a> 
+		can you leave the Lagoon.
+	</p>
+	
+	<!-- secret message function -->
+	<div onmouseover="secretMsg(this)" onmouseout="defaultMsg(this)"
+	style="background-color:#6495ED; width:140px; height:15px; padding: 40px;">
+	Mouse Over Me </div>
+	
+	<script>
+	function secretMsg(obj){
+		obj.innerHTML = "Watch the video below"
+	}
+	function defaultMsg(obj){
+		obj.innerHTML = "Mouser Over Me"
+	}
+	</script>
+	
+	<video width="480" height="400" controls>
+	<source src="video.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+	
+	
+	<h2>Explore the world Ziale</h2>
+	<img src="forest1.png" alt="forest" width ="500" height ="300">
+	<p> <span class="boldtext">Ziale</span> is inhabited by human race, demon race, elves, beastman, and fishman. <br>
+		Each race has its own <span class="boldtext italictext">"unique abilities and special skills"</span>. <br>
+		You are free to choose how to distribute the 
+		<a href="https://en.wikipedia.org/wiki/Statistic_(role-playing_games)"><span class="boldtext">Status Points</span></a>
+		you acquire. <br>
+		<span class="boldtext">Attributes</span> <br>
+		<ul>
+			<li> Agility </li>
+			<li> Strength </li>
+			<li> Vitality </li>
+			<li> Dexterity </li>
+			<li> Intelligence</li>
+			<li> Mind </li>
+		</ul>		
+	<h3> Find new <span class="boldtext">friends</span> in this multiplayer game</h3>
+	<p> Teaming up with other players will give you better experience points
+		and better loot drop. <br>
+		A <span class="italictext"> full party</span> needs to have 5 players.
+		Full Party experience points increase of 0.5% <br>
+		Full Party Loot drop increase of 0.25% <br>
+	</p>
+	<h4> Character Creation </h4>
+	<a href="https://charactercreator.org/">
+	<img src="character.jpg" alt="character" width="500" height="300">
+	</a>
+	<p> Create your 3D 
+		<a href="https://en.wikipedia.org/wiki/Anime"><span class=" boldtext italictext">anime</span></a> inspired character.		<br>
+		Choose the race your character will represent. <br>
+	    <span class="italictext"> Some cosmetic items are only available for specific race. </span><br>
+	    You can sculpt your character's face and change body shape based on your preference. <br>
+	</p>
+</body>
+</html>
