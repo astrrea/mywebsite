@@ -7,19 +7,6 @@
   <meta name="keywords" content="Star Constellations, Star, Star Patterns, Star clusters ">
   <meta name="author" content="Kate Densley">
 <title>Star Constellations</title>
-<script>
-	function allowDrop(ev){
-		ev.preventDefault();
-		}
-	function drag(ev) {
-		ev.dataTransfer.setData("text", ev.target.id);
-		}
-	function drop(ev){
-		var data=ev.dataTransfer.getData("text");
-		ev.target.appendChild(document.getElementById(data));
-		ev.preventDefault();
-		}
-</script>
 </head>
 <body>
 <header>
@@ -43,9 +30,6 @@
 	<p> Constellations is a group of stars that forms an imaginary pattern in the night sky. 
 	These stars form particular shapes if you draw imaginary lines like a dot-to-dot puzzle(Nasa, 2021).
 	</p>
-	<img id="drag1" src="const.jpg" alt="const" draggable="true" ondragstart="drag(event)" width ="500" height ="300">
-	<p> Drag picture in the rectangle </p>
-	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
 	</main>
 	
 	<section>
