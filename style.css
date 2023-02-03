@@ -113,3 +113,25 @@ ul, li {
      position:relative;
     }
 }
+
+
+.boxes {
+	width: 250px;
+	height: 150px;
+	border: 3px solid #45A29E;
+	padding: 100px;
+	margin: 0px;
+	padding-top: 20px;
+	text-align:left;
+	border-radius: 25px;
+}
+
+.boxes a:hover{
+   color: cyan;
+}
+
+.subtitles {
+	font-size: 15px;
+	color: #c5c6c7;
+	font-family:"Lucida Console", Monospace;
+}
