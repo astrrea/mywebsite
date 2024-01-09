@@ -132,7 +132,7 @@ ul, li {
 }
 
 .boxes a:hover{
-   color: chocolate;
+   color: cyan;
 }
 
 .subtitles {
