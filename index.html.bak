@@ -32,14 +32,11 @@
 	</div>
 
 <main>
-<h1>  		
+<h1> HELLO I AM 		
 		<picture>
 			<source media="(min-width: 200px)" srcset="Content/Images/future.png">
 			<img source="Content/Images/future.png" width="200" height="200">
-		</picture> 
-		
-		HELLO I AM
-</h1>
+		</picture> </h1>
 <div class="typewriter">
 	<h2> Kate Densley </h2>
 	<!-- <button id="modeButton" onlick="mode_changer()">Dark Mode</button> -->
